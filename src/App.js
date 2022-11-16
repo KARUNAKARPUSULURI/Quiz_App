@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Data from "./Data.json";
+import Display from "./Display"
 
 function App() {
+  const [score, setScore] = useState([]);
+  let Marks = []
+  const handleChanger = (value, index) => {
+    Marks = score
+    Marks[index] = value
+    setScore([...Marks]);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+      <div className='container bg-info py-4 my-4' style={{ width: 500 }}>
+        <center>
+          {Data.map((question, index) => {
+            return (
+              <Display question={question} index={index} handleChanger={handleChanger} />
+            )
+          })}
+        </center>
+      </div>
+      <center><button type="button" class="btn btn-outline-primary btn-lg m-2" onClick={() => alert(score.reduce((a, b) => a + b, 0) + "/6")}>Submit Quiz</button></center>
+    </>
   );
 }
 

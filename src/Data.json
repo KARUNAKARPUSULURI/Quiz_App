@@ -1,0 +1,32 @@
+[
+    {
+        "question":"who won 1000m race in olympics 2021",
+        "options":["karunakar","pusuluri","stewart","richmann"],
+        "answer":"A"
+    },
+    {
+        "question":"CEO of Microsoft",
+        "options":["karunakar","Jeff Bezos","Bill Gates","Elon Musk"],
+        "answer":"C"
+    },
+    {
+        "question":"Which can not a fly?",
+        "options":["crow","Pigeon","ostritch","tiger"],
+        "answer":"D"
+    },
+    {
+        "question":"who is twitter CEO",
+        "options":["Elon Musk","Jan kung Lee","stewart","Jeff Bezos"],
+        "answer":"A"
+    },
+    {
+        "question":"who country won world cup in 2011 cricket",
+        "options":["Aus","Eng","Ind","Pak"],
+        "answer":"C"
+    },
+    {
+        "question":"where is Burj Khalifa",
+        "options":["Dubai","UAE","United Arab Emirates","All of the above"],
+        "answer":"D"
+    }
+]
